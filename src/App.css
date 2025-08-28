@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -40,3 +40,84 @@
 .read-the-docs {
   color: #888;
 }
+ */
+
+
+
+ /* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+*, 
+*::after,
+*::before{
+  margin: 0;
+} 
+
+
+
+body{
+  font-family: "Raleway", sans-serif;
+}
+
+ /* This property only work in Chrome Safari and Opera. which is below. */
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* It will work on IE, Edge.*/
+body{
+  -ms-overflow-style: none; 
+  /* for  IE, Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 
+}
+
+ .logo a {
+      color: #060000ff;
+      text-decoration:none;
+      fontSize: 25px;
+    }
+
+    .nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #030303;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2a09bd;
+  /* background-color: #1c7430; */
+  border-radius: 4px;
+}
+
+
